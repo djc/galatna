@@ -11,9 +11,11 @@ data. If you have a similarly broken file, ``combine.py`` can clean it up.
 
 To create a map, run process.py with the (fixed) JSON file as an argument. It
 will output some progress messages to stderr and the SVG contents to stdout.
-Use stdout redirection to send the SVG to a file, the view in your browser of
-choice; both Firefox and Chrome do okay, although it will take some time to
-fully render the map if you have extensive location history.
+On a 2009-era MacBook Pro, the script takes about 10s to process my 20000 data
+points (about 2.5 years worth of Latitude data). Use stdout redirection to
+send the SVG to a file, the view in your browser of choice; both Firefox and
+Chrome do okay, although it will take some time to fully render the map if
+you have extensive location history.
 
 .. _Google Takeout: https://www.google.com/takeout/
 .. _example.png: https://bitbucket.org/djc/galatna/raw/tip/example.png

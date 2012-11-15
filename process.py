@@ -102,6 +102,9 @@ def paint(fn):
 	else:
 		data = read(fn)
 	
+	print >> sys.stderr, '%s data points found' % len(data)
+	ddiff = data[-1][0] - data[0][0]
+	print >> sys.stderr, '%s days worth of data' % ddiff.days
 	latr = delta([p[0] for dt, p in data])
 	lonr = delta([p[1] for dt, p in data])
 	bounds = (
