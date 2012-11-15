@@ -2,7 +2,8 @@ Galatna
 =======
 
 Galatna creates an SVG map from your Latitude history. It requires Python 2.7
-and a Latitude output file as downloaded from `Google Takeout`_.
+and a Latitude output file as downloaded from `Google Takeout`_. An example
+can be found in the project directory, as example.png.
 
 The current version of Takeout's Latitude export feature is a bit broken, in
 that it exports multiple JSON object keys of the same name with different
