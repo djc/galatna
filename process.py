@@ -77,9 +77,14 @@ def read(fn):
 		src = json.load(f)
 	
 	data = []
-	for item in src['data']['items']:
+	points = src['locations'] if 'locations' in src else src['data']['items']
+	for item in points:
 		dt = datetime.fromtimestamp(int(item['timestampMs']) / 1000.0)
-		data.append((dt, (item['latitude'], item['longitude'])))
+		if 'latitudeE7' in item:
+			vals = item['latitudeE7'], item['longitudeE7']
+			data.append((dt, (vals[0] / 10000000.0, vals[1] / 10000000.0)))
+		else:
+			data.append((dt, (item['latitude'], item['longitude'])))
 	
 	data.sort()
 	with open(fn + '.dat', 'wb') as f:
