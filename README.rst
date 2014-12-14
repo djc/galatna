@@ -11,8 +11,8 @@ motivation for and process of writing this code in a `blog post`_.
 
 To create a map, run ``process.py`` with the JSON file as an argument. It will
 output some progress messages to ``stderr`` and the SVG to ``stdout``. On a
-2009-era MacBook Pro, the script takes about 10s to process my 20000 data
-points (about 2.5 years worth of Location History data). Use stdout
+late 2013 MacBook Pro, the script takes about 18s to process my 700000 data
+points (about 5 years worth of Location History data). Use stdout
 redirection to send the SVG to a file, then view in your browser of choice;
 both Firefox and Chrome do okay, although it will take some time to fully
 render the map if you have extensive location history.
