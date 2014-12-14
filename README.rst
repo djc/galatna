@@ -6,6 +6,8 @@ It requires Python 2.7 and a Location History output file
 (``LocationHistory.json``) as downloaded from `Google Takeout`_. An example
 can be found in the project directory, as `example.png`_.
 
+.. image:: https://raw.github.com/djc/galatna/master/example.png
+
 To create a map, run ``process.py`` with the JSON file as an argument. It will
 output some progress messages to ``stderr`` and the SVG to ``stdout``. On a
 2009-era MacBook Pro, the script takes about 10s to process my 20000 data
