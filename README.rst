@@ -4,7 +4,8 @@ Galatna
 Galatna creates an SVG-based visualization from your Google Location History.
 It requires Python 2.7 and a Location History output file
 (``LocationHistory.json``) as downloaded from `Google Takeout`_. An example
-can be found in the project directory, as ``example.png``.
+can be found in the project directory, as ``example.png``. I described the
+motivation for and process of writing this code in a `blog post`_.
 
 .. image:: https://raw.github.com/djc/galatna/master/example.png
 
@@ -21,4 +22,4 @@ in that they exported multiple JSON object keys of the same name with different
 data. If you have a similarly broken file, ``combine.py`` can clean it up.
 
 .. _Google Takeout: https://www.google.com/takeout/
-.. _example.png: https://bitbucket.org/djc/galatna/raw/tip/example.png
+.. _blog post: https://dirkjan.ochtman.nl/writing/2012/11/28/tracing-a-path.html
